@@ -23,12 +23,12 @@ void main() {
 
 	int servo, v, i;
 
-	if (fopen_s(&in, "IN.csv", "r") != 0) {
+	if (fopen_s(&in, "data\\IN.csv", "r") != 0) {
 		printf_s("ファイルを読み込めませんでした。\n");
 		return;
 	}
 
-	if (fopen_s(&out, "OUT.csv", "w") != 0) {
+	if (fopen_s(&out, "data\\OUT.csv", "w") != 0) {
 		printf_s("ファイルを作製できませんでした。\n");
 		return;
 	}
